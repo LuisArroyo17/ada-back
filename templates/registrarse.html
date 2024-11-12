@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Analizer - Registrarse</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/static/css/tailwind.css" rel="stylesheet">
+
+</head>
+<body class="main">
+    <div class="absolute top-8 left-8">
+        <img src="https://placehold.co/100x100" alt="Infinity logo, featuring an abstract, colorful intertwined loop design" class="h-12 w-auto">
+    </div>
+    <div class="form">
+        <h2 class="text-black text-xl font-semibold mb-6 text-center">Registrarse</h2>
+        <form action="/registrarse" method="POST" class="space-y-4">
+            <div>
+                <label for="nombre" class="text-black block text-sm font-medium mb-1">Nombre:</label>
+                <input 
+                    type="text" 
+                    id="nombre" 
+                    name="nombre" 
+                    class="w-full px-4 py-2 rounded-full bg-gray-100 text-gray-700 focus:outline-none" 
+                    placeholder="Ingresa tu nombre" 
+                    required
+                >
+            </div>
+            <div>
+                <label for="correo" class="text-black block text-sm font-medium mb-1">Correo:</label>
+                <input 
+                    type="email" 
+                    id="correo" 
+                    name="correo" 
+                    class="w-full px-4 py-2 rounded-full bg-gray-100 text-gray-700 focus:outline-none" 
+                    placeholder="Ingresa tu correo" 
+                    required
+                >
+            </div>
+            <div>
+                <label for="password" class="text-black block text-sm font-medium mb-1">Contraseña:</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    class="w-full px-4 py-2 rounded-full bg-gray-100 text-gray-700 focus:outline-none" 
+                    placeholder="Crea una contraseña" 
+                    required
+                >
+            </div>
+            <button 
+                type="submit" 
+                class="button bg-green-500 text-white font-bold py-2 px-4 rounded-full hover:bg-green-600 focus:outline-none"
+            >
+                Registrarse
+            </button>
+        </form>
+        <p class="text-center text-black text-sm mt-4">
+            ¿Ya tienes una cuenta? 
+            <a href="/iniciarsesion" class="redirigir text-blue-500 hover:text-blue-700">Iniciar sesión</a>
+        </p>
+    </div>
+</body>
+</html>

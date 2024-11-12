@@ -1,0 +1,46 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnpm-debug.log*
+
+# Directorio de salida de Tailwind CSS
+css/styles.css
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor de código
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración de entorno
+.env
+.env.local
+.env.*.local
+
+# Output de builds
+dist/
+build/
+
+# Tailwind config cache (opcional, si se genera automáticamente)
+.tailwindcss*
+
+# Archivos de tests
+coverage/

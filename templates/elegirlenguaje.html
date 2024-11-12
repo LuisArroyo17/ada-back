@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Analizer - Lenguaje</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+<body class="main">
+    <header class="encabezado">
+        <div class="flex justify-start mb-4">
+            <div class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center">
+                <span class="text-xl font-bold">Logo</span>
+            </div>
+        </div>
+    </header>
+    <div class="form">
+        <div>
+            <h2 class="text-center text-2xl font-bold text-red-500 mb-6">Selecciona el Lenguaje</h2>
+            <form action="/elegirlenguaje" method="POST">
+                <div class="flex justify-center mb-4">
+                    <button type="submit" name="lenguaje" value="Java" class="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 focus:outline-none focus:bg-green-700">
+                        Java
+                    </button>
+                </div>
+                <div class="flex justify-center mb-4">
+                    <button type="submit" name="lenguaje" value="Python" class="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 focus:outline-none focus:bg-green-700">
+                        Python
+                    </button>
+                </div>
+                <div class="flex justify-center mb-4">
+                    <button type="submit" name="lenguaje" value="C++" class="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 focus:outline-none focus:bg-green-700">
+                        C++
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

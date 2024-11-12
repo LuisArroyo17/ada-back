@@ -1,0 +1,42 @@
+.main{
+    background-color: #2F4D8F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+    
+.encabezado{
+    background-color:#2F4D8F ;
+    color: text-white;
+    padding: 1rem;
+}
+
+.form {
+    background-color: #B0e2ff; 
+    padding: 2rem;
+    border-radius: 0.5rem; 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05); 
+    width: 20rem;
+}
+
+.button {
+    width: 100%; 
+    background-color: #f9a8d4; 
+    color: black; 
+    font-weight: 600; 
+    padding: 0.5rem 0;
+    border-radius: 9999px; 
+    outline: none; 
+    cursor: pointer; 
+}
+
+.button:hover {
+    background-color: #f472b6;
+}
+
+.redirigir{
+    color: blue;
+    text-decoration: underline;
+}

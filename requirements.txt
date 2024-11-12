@@ -1,0 +1,22 @@
+blinker==1.9.0
+click==8.1.7
+colorama==0.4.6
+contourpy==1.2.1
+cycler==0.12.1
+Flask==2.3.3
+fonttools==4.54.1
+itsdangerous==2.1.2
+Jinja2==3.1.2
+kiwisolver==1.4.7
+MarkupSafe==3.0.2
+matplotlib==3.8.0
+mkl-service==2.4.0
+mkl_fft @ file:///C:/Users/dev-admin/mkl/mkl_fft_1730823082242/work
+mkl_random @ file:///C:/Users/dev-admin/mkl/mkl_random_1730822522280/work
+numpy==1.21.6
+packaging==24.2
+pillow==11.0.0
+pyparsing==3.2.0
+python-dateutil==2.9.0.post0
+six==1.16.0
+Werkzeug==2.3.7
