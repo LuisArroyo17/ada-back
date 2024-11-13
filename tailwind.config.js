@@ -17,6 +17,8 @@ module.exports = {
         firered: '#D61F22',
         redhover: '#B3191C',
         lapislazuli: '#2F6690',
+        backblue: '#001862',
+        text: '#C7D4FF'
       },
     },
   },

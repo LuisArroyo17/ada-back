@@ -1,41 +1,62 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Analizer - Lenguaje</title>
+    <title>Elegir Lenguaje - Code Analyzer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="/static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<body class="main">
-    <header class="encabezado">
-        <div class="flex justify-start mb-4">
-            <div class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center">
-                <span class="text-xl font-bold">Logo</span>
-            </div>
-        </div>
-    </header>
-    <div class="form">
-        <div>
-            <h2 class="text-center text-2xl font-bold text-red-500 mb-6">Selecciona el Lenguaje</h2>
-            <form action="/elegirlenguaje" method="POST">
-                <div class="flex justify-center mb-4">
-                    <button type="submit" name="lenguaje" value="Java" class="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 focus:outline-none focus:bg-green-700">
-                        Java
-                    </button>
-                </div>
-                <div class="flex justify-center mb-4">
-                    <button type="submit" name="lenguaje" value="Python" class="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 focus:outline-none focus:bg-green-700">
-                        Python
-                    </button>
-                </div>
-                <div class="flex justify-center mb-4">
-                    <button type="submit" name="lenguaje" value="C++" class="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 focus:outline-none focus:bg-green-700">
-                        C++
-                    </button>
-                </div>
-            </form>
-        </div>
+
+<body class="bg-blue-900 text-white h-screen flex flex-col items-center justify-center">
+    <!-- Logout Button -->
+    <div class="absolute top-4 right-8 flex items-center space-x-2">
+        <i class="fas fa-sign-out-alt"></i>
+        <a href="#" class="text-white hover:underline">CERRAR SESIÓN</a>
+    </div>
+
+    <!-- Logo -->
+    <div class="mb-8">
+        <img src="https://placehold.co/150x150" alt="Code Analyzer Logo" class="mx-auto">
+    </div>
+
+    <!-- Title -->
+    <h1 class="text-4xl font-bold mb-8">CODE ANALIZER</h1>
+
+    <!-- Subheading -->
+    <h2 class="text-2xl font-semibold mb-6">ELEGIR LENGUAJE</h2>
+    <hr class="border-white w-48 mx-auto mb-8">
+
+    <!-- Language Options -->
+    <div class="space-y-4 w-full max-w-xs">
+        <!-- Java -->
+        <button
+            class="flex items-center justify-between bg-white text-blue-900 font-bold py-3 px-6 w-full rounded-full shadow-lg hover:bg-blue-800 hover:text-white transition">
+            <span class="flex items-center space-x-3">
+                <img src="https://placehold.co/30x30" alt="Java Logo" class="inline-block">
+                <span>JAVA</span>
+            </span>
+        </button>
+
+        <!-- Python -->
+        <button
+            class="flex items-center justify-between bg-white text-blue-900 font-bold py-3 px-6 w-full rounded-full shadow-lg hover:bg-blue-800 hover:text-white transition">
+            <span class="flex items-center space-x-3">
+                <img src="https://placehold.co/30x30" alt="Python Logo" class="inline-block">
+                <span>PYTHON</span>
+            </span>
+        </button>
+
+        <!-- C++ -->
+        <button
+            class="flex items-center justify-between bg-white text-blue-900 font-bold py-3 px-6 w-full rounded-full shadow-lg hover:bg-blue-800 hover:text-white transition">
+            <span class="flex items-center space-x-3">
+                <img src="https://placehold.co/30x30" alt="C++ Logo" class="inline-block">
+                <span>C++</span>
+            </span>
+        </button>
     </div>
 </body>
+
 </html>

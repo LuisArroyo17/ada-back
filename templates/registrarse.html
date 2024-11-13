@@ -1,64 +1,93 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Analizer - Registrarse</title>
+    <title>Registrarse - Code Analyzer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="/static/css/tailwind.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<body class="main">
-    <div class="absolute top-8 left-8">
-        <img src="https://placehold.co/100x100" alt="Infinity logo, featuring an abstract, colorful intertwined loop design" class="h-12 w-auto">
+
+<body class="bg-blue-900 text-white h-screen flex flex-col items-center justify-center">
+    <!-- Logo -->
+    <div class="mb-8">
+        <img src="https://placehold.co/150x150" alt="Code Analyzer Logo" class="mx-auto">
     </div>
-    <div class="form">
-        <h2 class="text-black text-xl font-semibold mb-6 text-center">Registrarse</h2>
-        <form action="/registrarse" method="POST" class="space-y-4">
+
+    <!-- Title -->
+    <h1 class="text-4xl font-bold mb-6">CODE ANALIZER</h1>
+    <h2 class="text-2xl font-semibold mb-8">REGISTRARSE</h2>
+
+    <!-- Registration Form -->
+    <form class="w-full max-w-2xl space-y-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- First Name -->
             <div>
-                <label for="nombre" class="text-black block text-sm font-medium mb-1">Nombre:</label>
-                <input 
-                    type="text" 
-                    id="nombre" 
-                    name="nombre" 
-                    class="w-full px-4 py-2 rounded-full bg-gray-100 text-gray-700 focus:outline-none" 
-                    placeholder="Ingresa tu nombre" 
-                    required
-                >
+                <label for="first-name" class="block text-sm font-semibold mb-2">NOMBRES</label>
+                <div class="flex items-center border-b-2 border-white py-2">
+                    <i class="fas fa-user text-lg mr-2"></i>
+                    <input id="first-name" type="text" placeholder="LUIS YAZID"
+                        class="bg-transparent outline-none text-white w-full placeholder-white">
+                </div>
             </div>
+
+            <!-- Last Name -->
             <div>
-                <label for="correo" class="text-black block text-sm font-medium mb-1">Correo:</label>
-                <input 
-                    type="email" 
-                    id="correo" 
-                    name="correo" 
-                    class="w-full px-4 py-2 rounded-full bg-gray-100 text-gray-700 focus:outline-none" 
-                    placeholder="Ingresa tu correo" 
-                    required
-                >
+                <label for="last-name" class="block text-sm font-semibold mb-2">APELLIDOS</label>
+                <div class="flex items-center border-b-2 border-white py-2">
+                    <i class="fas fa-user text-lg mr-2"></i>
+                    <input id="last-name" type="text" placeholder="ARROLLO VASQUEZ"
+                        class="bg-transparent outline-none text-white w-full placeholder-white">
+                </div>
             </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Username -->
             <div>
-                <label for="password" class="text-black block text-sm font-medium mb-1">Contraseña:</label>
-                <input 
-                    type="password" 
-                    id="password" 
-                    name="password" 
-                    class="w-full px-4 py-2 rounded-full bg-gray-100 text-gray-700 focus:outline-none" 
-                    placeholder="Crea una contraseña" 
-                    required
-                >
+                <label for="username" class="block text-sm font-semibold mb-2">USERNAME</label>
+                <div class="flex items-center border-b-2 border-white py-2">
+                    <i class="fas fa-user text-lg mr-2"></i>
+                    <input id="username" type="text" placeholder="YAZID"
+                        class="bg-transparent outline-none text-white w-full placeholder-white">
+                </div>
             </div>
-            <button 
-                type="submit" 
-                class="button bg-green-500 text-white font-bold py-2 px-4 rounded-full hover:bg-green-600 focus:outline-none"
-            >
-                Registrarse
+
+            <!-- Email -->
+            <div>
+                <label for="email" class="block text-sm font-semibold mb-2">CORREO</label>
+                <div class="flex items-center border-b-2 border-white py-2">
+                    <i class="fas fa-envelope text-lg mr-2"></i>
+                    <input id="email" type="email" placeholder="YAZID@GMAIL.COM"
+                        class="bg-transparent outline-none text-white w-full placeholder-white">
+                </div>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label for="password" class="block text-sm font-semibold mb-2">CONTRASEÑA</label>
+            <div class="flex items-center border-b-2 border-white py-2">
+                <i class="fas fa-lock text-lg mr-2"></i>
+                <input id="password" type="password" placeholder="******************"
+                    class="bg-transparent outline-none text-white w-full placeholder-white">
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center mt-6">
+            <button type="submit"
+                class="bg-white text-blue-900 font-bold py-3 px-8 rounded-full hover:bg-transparent hover:text-white border-2 border-white transition">
+                REGISTRARSE
             </button>
-        </form>
-        <p class="text-center text-black text-sm mt-4">
-            ¿Ya tienes una cuenta? 
-            <a href="/iniciarsesion" class="redirigir text-blue-500 hover:text-blue-700">Iniciar sesión</a>
+        </div>
+
+        <!-- Login Link -->
+        <p class="mt-6 text-sm text-center">
+            Ya tienes una cuenta? <a href="#" class="font-semibold underline hover:text-gray-300">Iniciar sesión</a>
         </p>
-    </div>
+    </form>
 </body>
+
 </html>

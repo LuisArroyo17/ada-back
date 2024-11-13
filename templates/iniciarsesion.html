@@ -1,62 +1,60 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Analizer - Iniciar sesión</title>
-    <!-- Tailwind CSS -->
-    <link href="{{ url_for('static', filename='css/tailwind.css') }}" rel="stylesheet">
-    <!-- Estilos personalizados -->
-    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <title>Login - Code Analyzer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<body class="main">
-    <header class="encabezado">
-        <div class="flex justify-start mb-4">
-            <div class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center">
-                <span class="text-xl font-bold">Logo</span>
+
+<body class="bg-blue-900 text-white h-screen flex items-center justify-center">
+    <div class="text-center w-full max-w-md">
+        <!-- Logo -->
+        <div class="mb-8">
+            <img src="https://placehold.co/150x150" alt="Code Analyzer Logo" class="mx-auto">
+        </div>
+        <!-- Title -->
+        <h1 class="text-4xl font-bold mb-4">CODE ANALIZER</h1>
+        <h2 class="text-xl font-semibold mb-8">INICIAR SESIÓN</h2>
+
+        <!-- Login Form -->
+        <form class="space-y-6" action="/iniciarsesion" method="POST">
+            <!-- Username -->
+            <div>
+                <label for="username" class="block text-left font-semibold mb-1">USERNAME</label>
+                <div class="flex items-center border-b-2 border-white py-2">
+                    <i class="fas fa-user text-lg mr-2"></i>
+                    <input id="username" type="text" placeholder="YAZID_ARROYO" 
+                        class="bg-transparent outline-none text-white w-full placeholder-white" />
+                </div>
             </div>
-        </div>
-    </header>
-    <div class="form">
-        <div>
-            <h2 class="text-center text-2xl font-bold text-red-500 mb-6">Iniciar sesión</h2>
-            <form action="/iniciarsesion" method="POST">
-                <div class="mb-4">
-                    <label for="username" class="block text-red-500 font-semibold mb-2">Usuario:</label>
-                    <input 
-                        type="text" 
-                        id="username" 
-                        name="username" 
-                        class="w-full px-3 py-2 border border-red-400 rounded focus:outline-none focus:border-red-500" 
-                        placeholder="Ingresa tu usuario" 
-                        required
-                    >
+
+            <!-- Password -->
+            <div>
+                <label for="password" class="block text-left font-semibold mb-1">CONTRASEÑA</label>
+                <div class="flex items-center border-b-2 border-white py-2">
+                    <i class="fas fa-lock text-lg mr-2"></i>
+                    <input id="password" type="password" placeholder="******************" 
+                        class="bg-transparent outline-none text-white w-full placeholder-white" />
                 </div>
-                <div class="mb-6">
-                    <label for="password" class="block text-red-500 font-semibold mb-2">Contraseña:</label>
-                    <input 
-                        type="password" 
-                        id="password" 
-                        name="password" 
-                        class="w-full px-3 py-2 border border-red-400 rounded focus:outline-none focus:border-red-500" 
-                        placeholder="Ingresa tu contraseña" 
-                        required
-                    >
-                </div>
-                <div class="flex justify-center">
-                    <button 
-                        type="submit" 
-                        class="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 focus:outline-none focus:bg-green-700"
-                    >
-                        Iniciar sesión
-                    </button>
-                </div>
-                <div class="mt-4 text-center">
-                    <span class="text-gray-700">¿No tienes una cuenta aún? </span>
-                    <a href="/registrarse" class="text-blue-500 hover:text-blue-700">Regístrate</a>
-                </div>
-            </form>
-        </div>
+            </div>
+
+            <!-- Login Button -->
+            <div>
+                <button type="submit"
+                    class="bg-white text-blue-900 font-bold py-3 px-8 w-full rounded-full hover:bg-transparent hover:text-white border-2 border-white transition">
+                    INICIAR SESIÓN
+                </button>
+            </div>
+        </form>
+
+        <!-- Register Link -->
+        <p class="mt-6 text-sm">
+            No tienes una cuenta? <a href="/registrarse" class="font-semibold underline hover:text-gray-300">Regístrate</a>
+        </p>
     </div>
 </body>
+
 </html>
